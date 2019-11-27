@@ -456,13 +456,16 @@ Monaca デバッガーまたは<br>プレビュー画面で動作確認をしま
 
 * Monaca を開き、`js/mb.js` を開きます
 * functionの処理を｛｝内にcopy & pasteしましょう
+
 ```js
 /***** demo1：保存 *****/
 saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, title, contents]
     
 }
 ```
+
 * functionの処理（copy & paste）
+
 ```js
 // 保存先クラスの作成
     var Inquiry = ncmb.DataStore('Inquiry');
@@ -574,13 +577,16 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 
 * Monaca を開き、`js/mb.js` を開きます
 * functionの処理を｛｝内にcopy & pasteしましょう
+
 ```js
 /***** demo2：全件検索 *****/
 getAllData: function() {        
    
 }
 ```
+
 * functionの処理（copy & paste）
+
 ```js
  // インスタンスの生成
     var inquiry = ncmb.DataStore('Inquiry');
@@ -718,13 +724,16 @@ function setData(str, results, listId) {
 
 * Monaca を開き、`js/mb.js` を開きます
 * functionの処理を｛｝内にcopy & pasteしましょう
+
 ```js
 /***** demo3-1：条件検索 *****/
 getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress, 引数2 入力値
    
 }
 ```
+
 * functionの処理（copy & paste）
+
 ```js
 // インスタンスの生成
     var inquiry = ncmb.DataStore('Inquiry');
@@ -796,13 +805,16 @@ getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress
 * コードを見てみましょう
 * Monaca を開き、`js/mb.js` を開きます
 * functionの処理を｛｝内にcopy & pasteしましょう
+
 ```js
 /***** demo3-2：条件検索（範囲指定） *****/
 getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { //引数1 age, 引数2,3 入力値
     
 }
 ```
+
 * functionの処理（copy & paste）
+
 ```js
 // インスタンスの生成
     var inquiry = ncmb.DataStore('Inquiry');
