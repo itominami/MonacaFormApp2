@@ -255,6 +255,55 @@ var ncmb = new NCMB(applicationKey, clientKey);
 ]
 ]
 
+### データストアにデータを保存する
+* 先ほどAPIキーを設定した続きに書いてください
+```js
+var applicationKey="";
+var clientKey="";
+
+var ncmb = new NCMB(applicationKey, clientKey);
+```
+
+* 以下をcopy & paste
+  * クラス名`TestClass2`, フィールド名`message`, レコード名`Hello, NCMB!`
+
+```js
+//message格納
+var TestClass2 = ncmb.DataStore("TestClass2");
+var testClass2 = new TestClass2();
+testClass2.set("message", "Hello,NCMB!")
+	   .save()
+```
+
+---
+.footnote_right[
+.right[
+ハンズオン
+]
+]
+
+## 完成イメージ
+
+```js
+<script>
+var applicationKey="";
+var clientKey="";
+var ncmb = new NCMB(applicationKey, clientKey);
+
+var TestClass2 = ncmb.DataStore("TestClass2");
+var testClass2 = new TestClass2();
+testClass2.set("message", "Hello,NCMB!")
+	   .save()
+ </script>
+```
+
+---
+.footnote_right[
+.right[
+ハンズオン
+]
+]
+
 ## 取り組み内容
 コーディング済みサンプルプロジェクトを利用します。必要な設定や作業後、すぐに動作確認いただけます。
 
