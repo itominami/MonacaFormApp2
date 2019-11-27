@@ -172,12 +172,12 @@ APIからデータストアにデータを保存してみましょう
 ### 環境準備手順
 .size_large_13[
 1. Monaca の準備
-  * サンプルプロジェクトのインポート
-1. mobile backend の準備
-  * アプリの新規作成
+  * Monacaでプロジェクトを作成する
+  * クラウドIDEで開く
 1. Monaca で mobile backend を利用するための準備
   * JavaScript SDK のインポート
   * JavaScript SDK の初期化（APIキー設定）
+1. データストアにデータを保存する
 ]
 
 ---
@@ -223,6 +223,37 @@ APIからデータストアにデータを保存してみましょう
 ]
 ]
 
+## Monaca で mobile backend を利用するための準備
+### JavaScript SDK のインポート
+* 設定/JS/CSSコンポーネントの追加と削除
+未
+.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
+
+---
+.footnote_right[
+.right[
+ハンズオン
+]
+]
+
+### JavaScript SDK の初期化（APIキー設定）
+* index.htmlにコーディングしていく
+* <script></script>内にコードを書く
+  * ""内に自分のAPIキーを設定してください
+  
+```js
+var applicationKey="";
+var clientKey="";
+
+var ncmb = new NCMB(applicationKey, clientKey);
+```
+
+---
+.footnote_right[
+.right[
+ハンズオン
+]
+]
 
 ## 取り組み内容
 コーディング済みサンプルプロジェクトを利用します。必要な設定や作業後、すぐに動作確認いただけます。
