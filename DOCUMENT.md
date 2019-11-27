@@ -464,9 +464,7 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
     
 }
 ```
-
-* functionの処理（copy & paste）
-
+  * functionの処理（copy & paste）
 ```js
 // 保存先クラスの作成
     var Inquiry = ncmb.DataStore('Inquiry');
@@ -586,9 +584,7 @@ getAllData: function() {
    
 }
 ```
-
-* functionの処理（copy & paste）
-
+  * functionの処理（copy & paste）
 ```js
  // インスタンスの生成
     var inquiry = ncmb.DataStore('Inquiry');
@@ -734,8 +730,7 @@ getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress
    
 }
 ```
-
-* functionの処理（copy & paste）
+  * functionの処理（copy & paste）
 ```js
 // インスタンスの生成
     var inquiry = ncmb.DataStore('Inquiry');
@@ -815,8 +810,7 @@ getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { /
     
 }
 ```
-
-* functionの処理（copy & paste）
+  * functionの処理（copy & paste）
 ```js
 // インスタンスの生成
     var inquiry = ncmb.DataStore('Inquiry');
