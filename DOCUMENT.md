@@ -464,7 +464,16 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
     
 }
 ```
-完成イメージ
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.1. 『demo1：保存』
+]
+]
+
+### 完成イメージ
+
 ```js
 /***** demo1：保存 *****/
 saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, title, contents]
@@ -558,7 +567,14 @@ getAllData: function() {
    
 }
 ```
-完成イメージ
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.2. 『demo2：全件検索』
+]
+]
+
+### 完成イメージ
 
 ```js
 /***** demo2：全件検索 *****/
@@ -681,7 +697,15 @@ getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress
    
 }
 ```
-完成イメージ
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.3. 『demo3：全件検索』
+]
+]
+
+### 完成イメージ
 
 ```js
 /***** demo3-1：条件検索 *****/
@@ -738,7 +762,15 @@ getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { /
     
 }
 ```
-完成イメージ
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.3. 『demo3：全件検索』
+]
+]
+
+### 完成イメージ
 
 ```js
 /***** demo3-2：条件検索（範囲指定） *****/
