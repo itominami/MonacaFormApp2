@@ -1,4 +1,4 @@
 # MonacaFormApp2
 
 資料はこちら▼<br>
-https://natsumo.github.io/MonacaFormApp2/
+https://itominami.github.io/MonacaFormApp2/#1
