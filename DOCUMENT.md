@@ -455,9 +455,7 @@ Monaca デバッガーまたは<br>プレビュー画面で動作確認をしま
 ### 『demo1：保存』動作確認
 
 * Monaca を開き、`js/mb.js` を開きます
-
-functionの処理を｛｝内にcopy & pasteしましょう
-
+* functionの処理を｛｝内にcopy & pasteしましょう
 ```js
 /***** demo1：保存 *****/
 saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, title, contents]
@@ -575,9 +573,7 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 ### 『demo2：全件検索』動作確認
 
 * Monaca を開き、`js/mb.js` を開きます
-
-functionの処理を｛｝内にcopy & pasteしましょう
-
+* functionの処理を｛｝内にcopy & pasteしましょう
 ```js
 /***** demo2：全件検索 *****/
 getAllData: function() {        
@@ -721,9 +717,7 @@ function setData(str, results, listId) {
 ### 『demo3-1：条件検索』（完全一致）動作確認
 
 * Monaca を開き、`js/mb.js` を開きます
-
-functionの処理を｛｝内にcopy & pasteしましょう
-
+* functionの処理を｛｝内にcopy & pasteしましょう
 ```js
 /***** demo3-1：条件検索 *****/
 getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress, 引数2 入力値
@@ -801,9 +795,7 @@ getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress
 
 * コードを見てみましょう
 * Monaca を開き、`js/mb.js` を開きます
-
-functionの処理を｛｝内にcopy & pasteしましょう
-
+* functionの処理を｛｝内にcopy & pasteしましょう
 ```js
 /***** demo3-2：条件検索（範囲指定） *****/
 getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { //引数1 age, 引数2,3 入力値
