@@ -238,7 +238,7 @@ https://ja.monaca.io/
 
 .right-column[
 
-.size_large_18[ <br>**https://goo.gl/hikadh** ]
+.size_large_18[ <br>**https://00m.in/2Yxdz** ]
 
 ]
 
@@ -465,6 +465,24 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 }
 ```
 
+* functionの処理（copy & paste）
+```js
+// 保存先クラスの作成
+    var Inquiry = ncmb.DataStore('Inquiry');
+    // インスタンスの生成
+    var inquiry = new Inquiry();  
+    // データの設定と保存
+    inquiry.set('name', data[0]).set('emailAddress', data[1]).set('age', data[2])
+           .set('prefecture', data[3]).set('title', data[4]).set('contents', data[5])
+           .save()
+           .then(function(results){
+               // 保存成功
+           })
+           .catch(function(error){
+               //保存失敗
+           });
+```
+
 ---
 .footnote_right[
 .right[
@@ -566,6 +584,23 @@ functionの処理を｛｝内にcopy & pasteしましょう
 getAllData: function() {        
    
 }
+```
+
+* functionの処理（copy & paste）
+```js
+ // インスタンスの生成
+    var inquiry = ncmb.DataStore('Inquiry');
+    // データを全件検索取得
+    inquiry.order('createDate',true) // 保存日時降順
+            .fetchAll()
+            .then(function(results){
+                //全件取得成功理
+
+            })
+            .catch(function(error){
+                //全件取得失敗
+
+            });
 ```
 ---
 .footnote_right[
@@ -698,6 +733,22 @@ getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress
 }
 ```
 
+* functionの処理（copy & paste）
+```js
+// インスタンスの生成
+    var inquiry = ncmb.DataStore('Inquiry');
+    // データの条件検索取得（完全一致）
+    inquiry.order('createDate',true)
+           .equalTo(feild, inputData)
+           .fetchAll()
+           .then(function(results){
+               // 検索成功
+           })
+           .catch(function(error){
+               // 検索失敗
+           });
+```
+
 ---
 .footnote_right[
 .right[
@@ -761,6 +812,23 @@ functionの処理を｛｝内にcopy & pasteしましょう
 getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { //引数1 age, 引数2,3 入力値
     
 }
+```
+
+* functionの処理（copy & paste）
+```js
+// インスタンスの生成
+    var inquiry = ncmb.DataStore('Inquiry');
+    // データのの条件検索取得（範囲指定）
+    inquiry.order('createDate',true) // 保存日時降順
+           .greaterThanOrEqualTo(feild, inputDataGreaterThan)
+           .lessThan(feild, inputDataLessThan)
+           .fetchAll()
+           .then(function(results){
+               // 検索成功
+           })
+           .catch(function(error){
+               // 検索失敗
+           });
 ```
 
 ---
