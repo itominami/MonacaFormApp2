@@ -167,6 +167,64 @@ layout: false
 ]
 
 ## 取り組み内容
+APIからデータストアにデータを保存してみましょう
+
+### 環境準備手順
+.size_large_13[
+1. Monaca の準備
+  * サンプルプロジェクトのインポート
+1. mobile backend の準備
+  * アプリの新規作成
+1. Monaca で mobile backend を利用するための準備
+  * JavaScript SDK のインポート
+  * JavaScript SDK の初期化（APIキー設定）
+]
+
+---
+.footnote_right[
+.right[
+ハンズオン
+]
+]
+
+## Monacaでプロジェクトを作る
+* '最小限のテンプレート' を選択
+未
+.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
+
+---
+.footnote_right[
+.right[
+ハンズオン
+]
+]
+
+### プロジェクト作成
+* プロジェクト名 'TestApp'
+未
+.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
+
+---
+.footnote_right[
+.right[
+ハンズオン
+]
+]
+
+### プロジェクトの開き方
+* 'クラウドIDEで開く' から開く
+未
+.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
+
+---
+.footnote_right[
+.right[
+ハンズオン
+]
+]
+
+
+## 取り組み内容
 コーディング済みサンプルプロジェクトを利用します。必要な設定や作業後、すぐに動作確認いただけます。
 
 ### 1. 環境準備手順
