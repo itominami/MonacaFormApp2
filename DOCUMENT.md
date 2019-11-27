@@ -188,7 +188,7 @@ APIからデータストアにデータを保存してみましょう
 ]
 
 ## Monacaでプロジェクトを作る
-* '最小限のテンプレート' を選択
+* `最小限のテンプレート` を選択
 未
 .center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
 
@@ -200,7 +200,7 @@ APIからデータストアにデータを保存してみましょう
 ]
 
 ### プロジェクト作成
-* プロジェクト名 'TestApp'
+* プロジェクト名 `TestApp`
 未
 .center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
 
@@ -212,7 +212,7 @@ APIからデータストアにデータを保存してみましょう
 ]
 
 ### プロジェクトの開き方
-* 'クラウドIDEで開く' から開く
+* `クラウドIDEで開く`から開く
 未
 .center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
 
