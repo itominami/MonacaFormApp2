@@ -151,12 +151,12 @@ layout: false
 
 .size_large_13[
 * Monaca の利用登録（無料）
-  * https://ja.monaca.io/register/start.html
+  * https://ja.monaca.io/register/start.html　{:target="_blank"}
 * ニフクラ mobile backend の利用登録（無料）
-  * http://mb.cloud.nifty.com/signup.htm
+  * https://mbaas.nifcloud.com/signup.htm　{:target="_blank"}
 * ブラウザ Chrome 最新版
 * Monaca デバッガー（任意）
-  * https://ja.monaca.io/debugger.html
+  * https://ja.monaca.io/debugger.html　{:target="_blank"}
 ]
 
 ---
@@ -348,8 +348,8 @@ testClass2.set("message", "Hello,NCMB!")
 
 ```js
 <script>
-var applicationKey="";
-var clientKey="";
+var applicationKey="b3e0b30705aa66edb0650f8d19ccd7da7c63a798e042f94f6aa287a4812aaaa";
+var clientKey="e4556b0e29e3783830da9cd36c6bce06f200531f7c8092d0e954071867b58aaa";
 var ncmb = new NCMB(applicationKey, clientKey);
 
 var TestClass2 = ncmb.DataStore("TestClass2");
