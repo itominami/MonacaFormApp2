@@ -380,6 +380,8 @@ testClass2.set("message", "Hello,NCMB!")
 
 # 早速アプリ開発をしていきましょう
 
+.center[<img src="document-img/.png" alt="Monaca_1" width="600px">]
+
 ---
 .footnote_right[
 .right[
