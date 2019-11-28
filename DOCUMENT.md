@@ -24,15 +24,6 @@ layout: false
 はじめに
 ]
 
-## セミナー概要
-__問い合わせフォーム__ をイメージしたサンプルアプリを通して、クラウドデータベースへの保存と検索の方法を学んでいきます
-
-.center[<img src="document-img/app_image.png" alt="app_image.png" width="750px">]
-
----
-.footnote_right[
-はじめに
-]
 
 ## データをクラウドに保存する<br>３つのメリット
 
@@ -48,47 +39,7 @@ __問い合わせフォーム__ をイメージしたサンプルアプリを通
 .footnote_right[
 はじめに
 ]
-## 今回習得できる内容
-### クラウドデータベースの基本的な使い方
-#### データの保存
 
-.center[<img src="document-img/save_1.png" alt="save_1" width="450px">]
-
----
-.footnote_right[
-はじめに
-]
-## 今回習得できる内容
-### クラウドデータベースの基本的な使い方
-#### データの取得
-
-.center[<img src="document-img/fetchAll_1.png" alt="fetchAll_1" width="450px">]
-
----
-.footnote_right[
-はじめに
-]
-## 今回習得できる内容
-### クラウドデータベースの基本的な使い方
-#### データの条件検索取得（完全一致検索・範囲指定検索）
-
-.center[<img src="document-img/search_1.png" alt="search_1" width="650px">]
-
----
-.footnote_right[
-はじめに
-]
-## 今回習得できる内容
-### おまけ
-
-* データの削除
-* データの更新
-* その他 ニフクラ mobile backned でできること
-
----
-.footnote_right[
-はじめに
-]
 ## 今回利用するツール
 ### Monaca
 * __もなか 【[Monaca](https://ja.monaca.io/)】__ HTML5/JavaScript/CSS3でスマホアプリが開発できる開発環境。開発スタイル／コーディング環境は選択可能。
@@ -387,6 +338,58 @@ testClass2.set("message", "Hello,NCMB!")
 .right[
 ＿＿＿＿
 ]
+]
+
+## セミナー概要
+__問い合わせフォーム__ をイメージしたサンプルアプリを通して、クラウドデータベースへの保存と検索の方法を学んでいきます
+
+.center[<img src="document-img/app_image.png" alt="app_image.png" width="750px">]
+
+---
+.footnote_right[
+はじめに
+]
+
+## 今回習得できる内容
+### クラウドデータベースの基本的な使い方
+#### データの保存
+
+.center[<img src="document-img/save_1.png" alt="save_1" width="450px">]
+
+---
+.footnote_right[
+はじめに
+]
+## 今回習得できる内容
+### クラウドデータベースの基本的な使い方
+#### データの取得
+
+.center[<img src="document-img/fetchAll_1.png" alt="fetchAll_1" width="450px">]
+
+---
+.footnote_right[
+はじめに
+]
+## 今回習得できる内容
+### クラウドデータベースの基本的な使い方
+#### データの条件検索取得（完全一致検索・範囲指定検索）
+
+.center[<img src="document-img/search_1.png" alt="search_1" width="650px">]
+
+---
+.footnote_right[
+はじめに
+]
+## 今回習得できる内容
+### おまけ
+
+* データの削除
+* データの更新
+* その他 ニフクラ mobile backned でできること
+
+---
+.footnote_right[
+はじめに
 ]
 
 ## 取り組み内容
