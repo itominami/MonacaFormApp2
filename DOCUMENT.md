@@ -151,12 +151,12 @@ layout: false
 
 .size_large_13[
 * Monaca の利用登録（無料）
-  * <a href="https://ja.monaca.io/register/start.html" target="_blank">New Tab</a>
+  * <a href="https://ja.monaca.io/register/start.html" target="_blank">https://ja.monaca.io/register/start.html</a>
 * ニフクラ mobile backend の利用登録（無料）
-  * https://mbaas.nifcloud.com/signup.htm
+  * <a href="https://mbaas.nifcloud.com/signup.htm" target="_blank">https://mbaas.nifcloud.com/signup.htm</a>
 * ブラウザ Chrome 最新版
 * Monaca デバッガー（任意）
-  * https://ja.monaca.io/debugger.html
+  * <a href="https://ja.monaca.io/debugger.html" target="_blank">https://ja.monaca.io/debugger.html</a>
 ]
 
 ---
@@ -441,7 +441,7 @@ testClass2.set("message", "Hello,NCMB!")
 
 .center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
 
-https://ja.monaca.io/
+<a href="https://ja.monaca.io/" target="_blank">https://ja.monaca.io/</a>
 
 ---
 .footnote_right[
@@ -462,7 +462,7 @@ https://ja.monaca.io/
 
 .right-column[
 
-.size_large_18[ <br>**https://00m.in/2Yxdz** ]
+.size_large_18[ <br><a href="https://00m.in/2Yxdz" target="_blank">**https://00m.in/2Yxdz**</a> ]
 
 ]
 
@@ -484,7 +484,7 @@ https://ja.monaca.io/
 
 .center[<img src="document-img/make_mb_app_0.png" alt="make_mb_app_0" width="600px">]
 
-http://mb.cloud.nifty.com/
+<a href="https://mbaas.nifcloud.com/" target="_blank">https://mbaas.nifcloud.com/</a>
 
 ---
 .footnote_right[
