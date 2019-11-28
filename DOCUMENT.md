@@ -367,14 +367,9 @@ testClass2.set("message", "Hello,NCMB!")
 ]
 
 ## 結果
+* mobile backend管理画面を確認しましょう
 
-alertでコールバックを設定したので、処理が成功したか失敗したかが確認できました！
-未
-.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
-
-* mobile backend管理画面も確認しましょう
-未
-.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
+.center[<img src="document-img/dashboard.1.png" alt="Monaca_1" width="600px">]
 
 ---
 .footnote_right[
