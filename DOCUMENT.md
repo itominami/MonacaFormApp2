@@ -257,6 +257,7 @@ var ncmb = new NCMB(applicationKey, clientKey);
 
 ### データストアにデータを保存する
 * 先ほどAPIキーを設定した続きに書いてください
+
 ```js
 var applicationKey="";
 var clientKey="";
