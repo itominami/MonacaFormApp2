@@ -847,13 +847,15 @@ getAllData: function() {
     inquiry.order('createDate',true) // 保存日時降順
             .fetchAll()
             .then(function(results){
-                //全件取得成功理
-
-            })
-            .catch(function(error){
-                //全件取得失敗
-
-            });
+                    //全件取得成功理
+                    console.log('全件検索成功：' + results.length + '件');
+                    setData('全件検索', results, '#dataList');
+             })
+             .catch(function(error){
+                    //全件取得失敗
+                    ons.notification.alert('データの取得に失敗しました');
+                    console.log('全件検索失敗：' + error);
+              });
 }
 ```
 
@@ -962,18 +964,22 @@ getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress
 * functionの処理（copy & paste）
 
 ```js
-// インスタンスの生成
-    var inquiry = ncmb.DataStore('Inquiry');
-    // データの条件検索取得（完全一致）
-    inquiry.order('createDate',true)
-           .equalTo(feild, inputData)
-           .fetchAll()
-           .then(function(results){
-               // 検索成功
-           })
-           .catch(function(error){
-               // 検索失敗
-           });
+ // インスタンスの生成
+        var inquiry = ncmb.DataStore('Inquiry');
+        // データの条件検索取得（完全一致）
+        inquiry.order('createDate',true) // 保存日時降順
+               .equalTo(feild, inputData)
+               .fetchAll()
+               .then(function(results){
+                   // 検索成功
+                   console.log('条件検索成功');
+                   setData('条件検索', results, '#searchDataList1');
+               })
+               .catch(function(error){
+                   // 検索失敗
+                   ons.notification.alert('データの取得に失敗しました');
+                   console.log('条件検索失敗：' + error);
+               });
 ```
 
 ---
@@ -988,18 +994,22 @@ getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress
 ```js
 /***** demo3-1：条件検索 *****/
 getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress, 引数2 入力値
-    // インスタンスの生成
-    var inquiry = ncmb.DataStore('Inquiry');
-    // データの条件検索取得（完全一致）
-    inquiry.order('createDate',true)
-           .equalTo(feild, inputData)
-           .fetchAll()
-           .then(function(results){
-               // 検索成功
-           })
-           .catch(function(error){
-               // 検索失敗
-           });
+    // インスタンスの生成
+        var inquiry = ncmb.DataStore('Inquiry');
+        // データの条件検索取得（完全一致）
+        inquiry.order('createDate',true) // 保存日時降順
+               .equalTo(feild, inputData)
+               .fetchAll()
+               .then(function(results){
+                   // 検索成功
+                   console.log('条件検索成功');
+                   setData('条件検索', results, '#searchDataList1');
+               })
+               .catch(function(error){
+                   // 検索失敗
+                   ons.notification.alert('データの取得に失敗しました');
+                   console.log('条件検索失敗：' + error);
+               });
 }
 ```
 
