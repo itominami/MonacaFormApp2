@@ -266,13 +266,14 @@ Monacaでプロジェクトを作る
 ]
 
 ### JavaScript SDK の初期化（APIキーの読み込み）
-* `js/mb.js` を開きます
-* `YOUR_NCMB_APPLICATION_KEY` と `YOUR_NCMB_CLIENT_KEY` を mobile backend でアプリ作成時に発行された２つの APIキー （アプリケーションキーとクライアントキー）に貼り替えます
+* `index.html` にコーディングしていきます
+* <script></script>内に以下のコードを書きましょう
+	* applicationKeyとclientKeyのあとの`""`内には自分のAPIキーを設定してください。
 
 ```js
 // APIキー
-var applicationKey = 'YOUR_NCMB_APPLICATION_KEY';
-var clientKey = 'YOUR_NCMB_CLIENT_KEY';
+var applicationKey = "";
+var clientKey = "";
 ```
 
 * APIキーは mobile backend 管理画面の「アプリ設定」で確認できます
