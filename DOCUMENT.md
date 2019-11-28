@@ -268,7 +268,7 @@ Monacaでプロジェクトを作る
 ### JavaScript SDK の初期化（APIキーの読み込み）
 * `index.html` にコーディングしていきます
 * <script></script>内に以下のコードを書きましょう
-	* applicationKeyとclientKeyのあとの`""`内には自分のAPIキーを設定してください。
+	* applicationKeyとclientKeyのあとの`""`内には自分のAPIキーをしてください。
 
 ```js
 // APIキー
