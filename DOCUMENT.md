@@ -625,8 +625,25 @@ var ncmb = new NCMB(applicationKey, clientKey);
 ## 2.1. 『demo1：保存』
 
 .left-column[
+### 『demo1：保存』完成イメージ
 
-### 『demo1：保存』動作確認
+Monaca デバッガーまたは<br>プレビュー画面で動作確認をします
+* 名前から問い合わせ内容まで、問い合わせフォームすべてに入力
+* 入力後画面下の「送信」ボタンをクリックするとデータが保存される
+]
+
+.right-column[
+.center[<img src="document-img/save_2.png" alt="save_2" width="250px">]
+]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.1. 『demo1：保存』
+]
+]
+
+### 『demo1：保存』
 
 * Monaca を開き、`js/mb.js` を開きます
 * functionの処理を｛｝内にcopy & pasteしましょう
@@ -641,20 +658,24 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 * functionの処理（copy & paste）
 
 ```js
-// 保存先クラスの作成
-    var Inquiry = ncmb.DataStore('Inquiry');
-    // インスタンスの生成
-    var inquiry = new Inquiry();  
-    // データの設定と保存
-    inquiry.set('name', data[0]).set('emailAddress', data[1]).set('age', data[2])
-           .set('prefecture', data[3]).set('title', data[4]).set('contents', data[5])
-           .save()
-           .then(function(results){
-               // 保存成功
-           })
-           .catch(function(error){
-               //保存失敗
-           });
+ // 保存先クラスの作成
+      var Inquiry = ncmb.DataStore('Inquiry');
+      // インスタンスの生成
+      var inquiry = new Inquiry();  
+      // データの設定と保存
+      inquiry.set('name', data[0]).set('emailAddress', data[1]).set('age', data[2])
+            .set('prefecture', data[3]).set('title', data[4]).set('contents', data[5])
+            .save()
+            .then(function(results){
+                // 保存成功
+                ons.notification.alert('問い合わせを受け付けました');
+                    console.log('保存成功');
+            })
+            .catch(function(error){
+                //保存失敗
+                ons.notification.alert('問い合わせの受付に失敗したしました');
+                    console.log('保存失敗：' + error);
+            });
 ```
 
 ---
@@ -669,20 +690,24 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 ```js
 /***** demo1：保存 *****/
 saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, title, contents]
-    // 保存先クラスの作成
-    var Inquiry = ncmb.DataStore('Inquiry');
-    // インスタンスの生成
-    var inquiry = new Inquiry();  
-    // データの設定と保存
-    inquiry.set('name', data[0]).set('emailAddress', data[1]).set('age', data[2])
-           .set('prefecture', data[3]).set('title', data[4]).set('contents', data[5])
-           .save()
-           .then(function(results){
-               // 保存成功
-           })
-           .catch(function(error){
-               //保存失敗
-           });
+     // 保存先クラスの作成
+      var Inquiry = ncmb.DataStore('Inquiry');
+      // インスタンスの生成
+      var inquiry = new Inquiry();  
+      // データの設定と保存
+      inquiry.set('name', data[0]).set('emailAddress', data[1]).set('age', data[2])
+            .set('prefecture', data[3]).set('title', data[4]).set('contents', data[5])
+            .save()
+            .then(function(results){
+                // 保存成功
+                ons.notification.alert('問い合わせを受け付けました');
+                    console.log('保存成功');
+            })
+            .catch(function(error){
+                //保存失敗
+                ons.notification.alert('問い合わせの受付に失敗したしました');
+                    console.log('保存失敗：' + error);
+            });
 }
 ```
 
