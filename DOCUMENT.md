@@ -151,7 +151,7 @@ layout: false
 
 .size_large_13[
 * Monaca の利用登録（無料）
-  * [link name](https://ja.monaca.io/register/start.html){:target="_blank"}
+  * <a href="https://ja.monaca.io/register/start.html" target="_blank">New Tab</a>
 * ニフクラ mobile backend の利用登録（無料）
   * https://mbaas.nifcloud.com/signup.htm
 * ブラウザ Chrome 最新版
