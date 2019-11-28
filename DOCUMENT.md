@@ -221,6 +221,15 @@ Monacaでプロジェクトを作る
 ]
 ]
 
+### 参考：SDKとは
+
+---
+.footnote_right[
+.right[
+Monacaでプロジェクトを作る
+]
+]
+
 ## 1.3. Monaca で mobile backend を利用するための準備
 ### JavaScript SDK のインポート
 * Monaca を開きます
