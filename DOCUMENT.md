@@ -1354,11 +1354,13 @@ inquiry.set("emailAddress", "test@test.jp")
 .right[
 <br>
 今後のアプリ開発の<br>参考にしていただけたら幸いです！
+]
 
 <img src="document-img/takano.png" alt="takano.png" width="200px">
 
 .size_small_7[
 ニフクラ mobile backend イメージキャラクター<br>タカノくん
+]
 
 ---
 .footnote_right[
