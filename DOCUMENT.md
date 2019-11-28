@@ -773,8 +773,6 @@ Monaca デバッガーまたは<br>プレビュー画面で動作確認をしま
 
 .center[<img src="document-img/save_4.png" alt="save_4" width="800px">]
 
-.right[<br>…どのようにして保存されているのでしょうか？？<br>コードを見てみましょう！]
-
 ---
 .footnote_right[
 .right[
