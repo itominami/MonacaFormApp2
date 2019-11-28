@@ -625,55 +625,6 @@ var ncmb = new NCMB(applicationKey, clientKey);
 ## 2.1. 『demo1：保存』
 
 .left-column[
-### 『demo1：保存』動作確認
-
-Monaca デバッガーまたは<br>プレビュー画面で動作確認をします
-* 名前から問い合わせ内容まで、問い合わせフォームすべてに入力してください
-* 入力後画面下の「送信」ボタンをクリックします
-]
-
-.right-column[
-.center[<img src="document-img/save_2.png" alt="save_2" width="250px">]
-]
----
-.footnote_right[
-.right[
-ハンズオン<br>2.1. 『demo1：保存』
-]
-]
-
-### 『demo1：保存』動作確認
-
-* 確認 Alert が出れば保存成功です
-
-.center[<img src="document-img/save_3.png" alt="save_3" width="450px">]
-
-.right[…本当にクラウドにデータが保存されているのでしょうか<br>確認してみましょう！]
-
----
-.footnote_right[
-.right[
-ハンズオン<br>2.1. 『demo1：保存』
-]
-]
-
-### 『demo1：保存』動作確認
-
-保存されたデータを確認してみましょう！
-
-* mobile backend を開きます
-* `データストア` を開くと 「`Inquiry`」というクラスが作成されていて、その中にデータが格納されていることを確認できます
-
-.center[<img src="document-img/save_4.png" alt="save_4" width="800px">]
-
-.right[<br>…どのようにして保存されているのでしょうか？？<br>コードを見てみましょう！]
-
----
-.footnote_right[
-.right[
-ハンズオン<br>2.1. 『demo1：保存』
-]
-]
 
 ### 『demo1：保存』動作確認
 
@@ -744,6 +695,57 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 ハンズオン<br>2.2. 『demo2：全件検索』
 ]
 ]
+
+### 『demo1：保存』動作確認
+
+Monaca デバッガーまたは<br>プレビュー画面で動作確認をします
+* 名前から問い合わせ内容まで、問い合わせフォームすべてに入力してください
+* 入力後画面下の「送信」ボタンをクリックします
+]
+
+.right-column[
+.center[<img src="document-img/save_2.png" alt="save_2" width="250px">]
+]
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.1. 『demo1：保存』
+]
+]
+
+### 『demo1：保存』動作確認
+
+* 確認 Alert が出れば保存成功です
+
+.center[<img src="document-img/save_3.png" alt="save_3" width="450px">]
+
+.right[…本当にクラウドにデータが保存されているのでしょうか<br>確認してみましょう！]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.1. 『demo1：保存』
+]
+]
+
+### 『demo1：保存』動作確認
+
+保存されたデータを確認してみましょう！
+
+* mobile backend を開きます
+* `データストア` を開くと 「`Inquiry`」というクラスが作成されていて、その中にデータが格納されていることを確認できます
+
+.center[<img src="document-img/save_4.png" alt="save_4" width="800px">]
+
+.right[<br>…どのようにして保存されているのでしょうか？？<br>コードを見てみましょう！]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.1. 『demo1：保存』
+]
+]
+
 
 ## 2.2. 『demo2：全件検索』
 ### 『demo2：全件検索』動作確認
