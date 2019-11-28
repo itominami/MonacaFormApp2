@@ -1380,6 +1380,8 @@ inquiry.set("emailAddress", "test@test.jp")
 少しでも理解した上で、日常生活でもクラウドを活用していただけたらと思います！
 
 ---
+.footnote_right[
+.right[
 ]
 ]
 
