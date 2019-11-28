@@ -629,7 +629,7 @@ var ncmb = new NCMB(applicationKey, clientKey);
 
 Monaca デバッガーまたは<br>プレビュー画面で動作確認をします
 * 名前から問い合わせ内容まで、問い合わせフォームすべてに入力
-* 入力後画面下の「送信」ボタンをクリックするとデータが保存される
+* 入力後画面下の「送信」ボタンをクリックするとデータが保存されます
 ]
 
 .right-column[
@@ -685,7 +685,7 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 ]
 ]
 
-### 完成イメージ
+### コード実装後イメージ
 
 ```js
 /***** demo1：保存 *****/
@@ -773,7 +773,7 @@ Monaca デバッガーまたは<br>プレビュー画面で動作確認をしま
 
 
 ## 2.2. 『demo2：全件検索』
-### 『demo2：全件検索』動作確認
+### 『demo2：全件検索』完成イメージ
 
 * demo1 画面から demo2 画面に移動します
 
@@ -786,12 +786,12 @@ Monaca デバッガーまたは<br>プレビュー画面で動作確認をしま
 ]
 ]
 
-### 『demo2：全件検索』動作確認
+### 『demo2：全件検索』完成イメージ
 
 .left-column[
-* demo2 画面が表示されたタイミングで mobile backend から登録データを取得し、画面に表示するように実装しています
+* demo2 画面が表示されたタイミングで mobile backend から登録データを取得し、画面に表示させます
 * この時点では１件しか登録していないので、登録された１件だけ表示されます
-* demo1 画面から複数件登録してから、もう一度 demo2 を見てみましょう
+* demo1 画面から複数件登録してから、demo2 を見ると、今まで登録された件数全てが確認できます
 ]
 
 .right-column[
@@ -805,11 +805,10 @@ Monaca デバッガーまたは<br>プレビュー画面で動作確認をしま
 ]
 ]
 
-### 『demo2：全件検索』動作確認
+### 『demo2：全件検索』完成イメージ
 
 .left-column[
 * 例としてダミーデータを10件登録した場合はこんな感じになります
-* 検索についてのコードも確認してみましょう！
 ]
 
 .right-column[
@@ -823,7 +822,7 @@ Monaca デバッガーまたは<br>プレビュー画面で動作確認をしま
 ]
 ]
 
-### 『demo2：全件検索』動作確認
+### 『demo2：全件検索』
 
 * Monaca を開き、`js/mb.js` を開きます
 * functionの処理を｛｝内にcopy & pasteしましょう
@@ -861,7 +860,7 @@ getAllData: function() {
 ]
 ]
 
-### 完成イメージ
+### コード実装後完成イメージ
 
 ```js
 /***** demo2：全件検索 *****/
@@ -894,7 +893,7 @@ getAllData: function() {
 ]
 ]
 
-### 『demo2：全件検索』動作確認
+### 『demo2：全件検索』参考コード
 
 * 参考：リスト表示は `js/app.js` の `setData()` メソッド内で処理をしています
 
@@ -941,8 +940,58 @@ function setData(str, results, listId) {
 ]
 ]
 
+### 『demo2：全件検索』動作確認
+
+* demo1 画面から demo2 画面に移動します
+
+.center[<img src="document-img/fetchAll_2.png" alt="fetchAll_2" width="450px">]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.2. 『demo2：全件検索』
+]
+]
+
+### 『demo2：全件検索』動作確認
+
+.left-column[
+* demo2 画面が表示されたタイミングで mobile backend から登録データを取得し、画面に表示させます
+* この時点では１件しか登録していないので、登録された１件だけ表示されます
+* demo1 画面から複数件登録してから、demo2 を見ると、今まで登録された件数全てが確認できます
+]
+
+.right-column[
+.center[<img src="document-img/fetchAll_3.png" alt="fetchAll_3" width="250px">]
+]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.2. 『demo2：全件検索』
+]
+]
+
+### 『demo2：全件検索』動作確認
+
+.left-column[
+* 例としてダミーデータを10件登録した場合はこんな感じになります
+]
+
+.right-column[
+.center[<img src="document-img/fetchAll_4.png" alt="fetchAll_4" width="250px">]
+]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.2. 『demo2：全件検索』
+]
+]
+
+
 ## 2.3. 『demo3：条件検索』
-### 『demo3-1：条件検索』（完全一致）動作確認
+### 『demo3-1：条件検索』（完全一致）完成イメージ
 
 .size_small_9[
 * 左上メニューから demo3-1 に移動します
@@ -958,14 +1007,13 @@ function setData(str, results, listId) {
 ]
 ]
 
-### 『demo3-1：条件検索』（完全一致）動作確認
+### 『demo3-1：条件検索』（完全一致）完成イメージ
 
 * **完全一致** 検索になるので以下のような検索はできません
 
 .center[<img src="document-img/search_3.png" alt="search_3" width="230px">]
 
 * 部分一致検索が必要な場合は、アプリ内で実装が必要です
-* コードを見てみましょう！
 
 ---
 .footnote_right[
@@ -974,7 +1022,7 @@ function setData(str, results, listId) {
 ]
 ]
 
-### 『demo3-1：条件検索』（完全一致）動作確認
+### 『demo3-1：条件検索』（完全一致）
 
 * Monaca を開き、`js/mb.js` を開きます
 * functionの処理を｛｝内にcopy & pasteしましょう
@@ -1014,7 +1062,7 @@ getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress
 ]
 ]
 
-### 完成イメージ
+### コード実装後完成イメージ
 
 ```js
 /***** demo3-1：条件検索 *****/
@@ -1048,7 +1096,39 @@ getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress
 ]
 ]
 
-### 『demo3-2：条件検索』（～以上～未満）動作確認
+### 『demo3-1：条件検索』（完全一致）動作確認
+
+.size_small_9[
+* 左上メニューから demo3-1 に移動します
+* 登録したデータからメールアドレスまたは都道府県を指定してデータを検索取得します
+]
+
+.center[<img src="document-img/search_2.png" alt="search_2" width="450px">]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.3. 『demo3：全件検索』
+]
+]
+
+### 『demo3-1：条件検索』（完全一致）動作確認
+
+* **完全一致** 検索になるので以下のような検索はできません
+
+.center[<img src="document-img/search_3.png" alt="search_3" width="230px">]
+
+* 部分一致検索が必要な場合は、アプリ内で実装が必要です
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.3. 『demo3：全件検索』
+]
+]
+
+
+### 『demo3-2：条件検索』（～以上～未満）完成イメージ
 
 * 左上メニューから demo3-2 に移動します
 * 登録したデータから年齢の範囲を指定してデータを検索取得します
@@ -1062,9 +1142,8 @@ getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress
 ]
 ]
 
-### 『demo3-2：条件検索』（～以上～未満）動作確認
+### 『demo3-2：条件検索』（～以上～未満）
 
-* コードを見てみましょう
 * Monaca を開き、`js/mb.js` を開きます
 * functionの処理を｛｝内にcopy & pasteしましょう
 
@@ -1104,7 +1183,7 @@ getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { /
 ]
 ]
 
-### 完成イメージ
+### コード実装後完成イメージ
 
 ```js
 /***** demo3-2：条件検索（範囲指定） *****/
@@ -1170,6 +1249,21 @@ inquiry.or([subquery1, subquery2])
 ハンズオン<br>2.4. おまけ
 ]
 ]
+
+### 『demo3-2：条件検索』（～以上～未満）動作確認
+
+* 左上メニューから demo3-2 に移動します
+* 登録したデータから年齢の範囲を指定してデータを検索取得します
+
+.center[<img src="document-img/search_4.png" alt="search_4" width="550px">]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.3. 『demo3：全件検索』
+]
+]
+
 
 ## 2.4. おまけ
 ### データの削除
