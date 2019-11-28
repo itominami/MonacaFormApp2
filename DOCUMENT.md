@@ -819,13 +819,15 @@ getAllData: function() {
     inquiry.order('createDate',true) // 保存日時降順
             .fetchAll()
             .then(function(results){
-                //全件取得成功理
-
-            })
-            .catch(function(error){
-                //全件取得失敗
-
-            });
+                    //全件取得成功理
+                    console.log('全件検索成功：' + results.length + '件');
+                    setData('全件検索', results, '#dataList');
+             })
+             .catch(function(error){
+                    //全件取得失敗
+                    ons.notification.alert('データの取得に失敗しました');
+                    console.log('全件検索失敗：' + error);
+              });
 ```
 ---
 .footnote_right[
