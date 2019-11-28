@@ -189,8 +189,8 @@ APIからデータストアにデータを保存してみましょう
 
 ## Monacaでプロジェクトを作る
 * `最小限のテンプレート` を選択
-未
-.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
+
+.center[<img src="document-img/minimum.png" alt="Monaca_1" width="600px">]
 
 ---
 .footnote_right[
@@ -201,8 +201,7 @@ Monacaでプロジェクトを作る
 
 ### プロジェクト作成
 * プロジェクト名 `TestApp`
-未
-.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
+.center[<img src="document-img/project1.png" alt="Monaca_1" width="600px">]
 
 ---
 .footnote_right[
@@ -213,6 +212,7 @@ Monacaでプロジェクトを作る
 
 ### プロジェクトの開き方
 * `クラウドIDEで開く`から開く
+.center[<img src="document-img/project2.png" alt="Monaca_1" width="600px">]
 
 ---
 .footnote_right[
@@ -222,6 +222,7 @@ Monacaでプロジェクトを作る
 ]
 
 ### 参考：SDKとは
+.center[<img src="document-img/SDK.png" alt="Monaca_1" width="600px">]
 
 ---
 .footnote_right[
