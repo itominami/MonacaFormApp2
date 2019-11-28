@@ -101,7 +101,7 @@ __問い合わせフォーム__ をイメージしたサンプルアプリを通
 ]
 ## 今回利用するツール
 ### ニフクラ mobile backend
-__にふくら-もばいる-ばっくえんど 【[ニフクラ mobile backend](http://mb.cloud.nifty.com/about.htm)】__ スマートフォンアプリに必要なバックエンド機能が開発不要で利用できるクラウドサービス。 クラウド上に用意された機能を API で呼び出すだけで利用できます。また、APIを簡単に使うための SDK を用意しています（ iOS / Android / Monaca / Unity ）。mobile Backend as a Service の頭文字を取って、通称 **mBaaS** と呼ばれます。
+__にふくら-もばいる-ばっくえんど 【[ニフクラ mobile backend](http://mb.cloud.nifty.com/about.htm)】__ スマートフォンアプリに必要なバックエンド機能が開発不要で利用できるクラウドサービス。 クラウド上に用意された機能を API で呼び出すだけで利用できます。また、APIを簡単に使うための SDK を用意しています（ Swift / Objective-C / Android / Monaca / Unity ）。mobile Backend as a Service の頭文字を取って、通称 **mBaaS** と呼ばれます。
 
 .center[<img src="document-img/About_mBaaS.png" alt="About_mBaaS" width="300px">]
 
@@ -151,12 +151,12 @@ layout: false
 
 .size_large_13[
 * Monaca の利用登録（無料）
-  * https://ja.monaca.io/register/start.html　{:target="_blank"}
+  * [link name](https://ja.monaca.io/register/start.html){:target="_blank"}
 * ニフクラ mobile backend の利用登録（無料）
-  * https://mbaas.nifcloud.com/signup.htm　{:target="_blank"}
+  * https://mbaas.nifcloud.com/signup.htm
 * ブラウザ Chrome 最新版
 * Monaca デバッガー（任意）
-  * https://ja.monaca.io/debugger.html　{:target="_blank"}
+  * https://ja.monaca.io/debugger.html
 ]
 
 ---
