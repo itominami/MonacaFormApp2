@@ -195,7 +195,7 @@ APIからデータストアにデータを保存してみましょう
 ---
 .footnote_right[
 .right[
-ハンズオン
+Monacaでプロジェクトを作る
 ]
 ]
 
@@ -207,51 +207,101 @@ APIからデータストアにデータを保存してみましょう
 ---
 .footnote_right[
 .right[
-ハンズオン
+Monacaでプロジェクトを作る
 ]
 ]
 
 ### プロジェクトの開き方
 * `クラウドIDEで開く`から開く
-未
-.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
 
 ---
 .footnote_right[
 .right[
-ハンズオン
+Monacaでプロジェクトを作る
 ]
 ]
 
-## Monaca で mobile backend を利用するための準備
+## 1.3. Monaca で mobile backend を利用するための準備
 ### JavaScript SDK のインポート
-* 設定/JS/CSSコンポーネントの追加と削除
-未
-.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
+* Monaca を開きます
+* `設定` ＞ `JS/CSSコンポーネントの追加と削除` をクリックます
+* 右上の「 `コンポーネント名` 」に「 `ncmb` 」と入力して検索します
+
+.center[<img src="document-img/add_js_sdk_1.png" alt="add_js_sdk_1" width="700px">]
 
 ---
 .footnote_right[
 .right[
-ハンズオン
+ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
 ]
 ]
 
-### JavaScript SDK の初期化（APIキー設定）
-* index.htmlにコーディングしていく
-* <script></script>内にコードを書く
-  * ""内に自分のAPIキーを設定してください
-  
+### JavaScript SDK のインポート
+* 追加をクリックします
+
+.center[<img src="document-img/add_js_sdk_2.png" alt="add_js_sdk_2" width="600px">]
+
+* バージョンは最新（デフォルト）のまま `インストール` をクリックします
+* チェックを入れ `保存する` をクリックします
+
+.center[<img src="document-img/add_js_sdk_3.png" alt="add_js_sdk_3" width="600px">]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
+]
+]
+
+### JavaScript SDK のインポート
+* SDK がインポートされました
+
+.center[<img src="document-img/add_js_sdk_4.png" alt="add_js_sdk_4" width="700px">]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
+]
+]
+
+### JavaScript SDK の初期化（APIキーの読み込み）
+* `js/mb.js` を開きます
+* `YOUR_NCMB_APPLICATION_KEY` と `YOUR_NCMB_CLIENT_KEY` を mobile backend でアプリ作成時に発行された２つの APIキー （アプリケーションキーとクライアントキー）に貼り替えます
+
 ```js
-var applicationKey="";
-var clientKey="";
-
-var ncmb = new NCMB(applicationKey, clientKey);
+// APIキー
+var applicationKey = 'YOUR_NCMB_APPLICATION_KEY';
+var clientKey = 'YOUR_NCMB_CLIENT_KEY';
 ```
 
+* APIキーは mobile backend 管理画面の「アプリ設定」で確認できます
+
+.center[<img src="document-img/confirm_apikey.png" alt="confirm_apikey" width="700px">]
+
 ---
 .footnote_right[
 .right[
-ハンズオン
+ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
+]
+]
+
+### JavaScript SDK の初期化（APIキーの読み込み）
+* APIキー を設定することで、SDK が初期化され利用可能になります
+  * `NCMB` は SDK を表しています
+
+```js
+// SDK初期化
+var ncmb = new NCMB(applicationKey, clientKey);
+
+```
+
+これで準備はすべて完了しました。
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.1. 『demo1：保存』
 ]
 ]
 
@@ -279,7 +329,7 @@ testClass2.set("message", "Hello,NCMB!")
 ---
 .footnote_right[
 .right[
-ハンズオン
+データを保存する
 ]
 ]
 
@@ -301,7 +351,33 @@ testClass2.set("message", "Hello,NCMB!")
 ---
 .footnote_right[
 .right[
-ハンズオン
+データを保存する
+]
+]
+
+## 結果
+
+alertでコールバックを設定したので、処理が成功したか失敗したかが確認できました！
+未
+.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
+
+* mobile backend管理画面も確認しましょう
+未
+.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
+
+---
+.footnote_right[
+.right[
+データを保存する
+]
+]
+
+### 早速アプリ開発をしていきましょう
+
+---
+.footnote_right[
+.right[
+＿＿＿＿
 ]
 ]
 
@@ -454,89 +530,7 @@ http://mb.cloud.nifty.com/
 ]
 ]
 
-## 1.3. Monaca で mobile backend を利用するための準備
-### JavaScript SDK のインポート
-* Monaca を開きます
-* `設定` ＞ `JS/CSSコンポーネントの追加と削除` をクリックます
-* 右上の「 `コンポーネント名` 」に「 `ncmb` 」と入力して検索します
 
-.center[<img src="document-img/add_js_sdk_1.png" alt="add_js_sdk_1" width="700px">]
-
----
-.footnote_right[
-.right[
-ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
-]
-]
-
-### JavaScript SDK のインポート
-* 追加をクリックします
-
-.center[<img src="document-img/add_js_sdk_2.png" alt="add_js_sdk_2" width="600px">]
-
-* バージョンは最新（デフォルト）のまま `インストール` をクリックします
-* チェックを入れ `保存する` をクリックします
-
-.center[<img src="document-img/add_js_sdk_3.png" alt="add_js_sdk_3" width="600px">]
-
----
-.footnote_right[
-.right[
-ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
-]
-]
-
-### JavaScript SDK のインポート
-* SDK がインポートされました
-
-.center[<img src="document-img/add_js_sdk_4.png" alt="add_js_sdk_4" width="700px">]
-
----
-.footnote_right[
-.right[
-ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
-]
-]
-
-### JavaScript SDK の初期化（APIキーの読み込み）
-* `js/mb.js` を開きます
-* `YOUR_NCMB_APPLICATION_KEY` と `YOUR_NCMB_CLIENT_KEY` を mobile backend でアプリ作成時に発行された２つの APIキー （アプリケーションキーとクライアントキー）に貼り替えます
-
-```js
-// APIキー
-var applicationKey = 'YOUR_NCMB_APPLICATION_KEY';
-var clientKey = 'YOUR_NCMB_CLIENT_KEY';
-```
-
-* APIキーは mobile backend 管理画面の「アプリ設定」で確認できます
-
-.center[<img src="document-img/confirm_apikey.png" alt="confirm_apikey" width="700px">]
-
----
-.footnote_right[
-.right[
-ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
-]
-]
-
-### JavaScript SDK の初期化（APIキーの読み込み）
-* APIキー を設定することで、SDK が初期化され利用可能になります
-  * `NCMB` は SDK を表しています
-
-```js
-// SDK初期化
-var ncmb = new NCMB(applicationKey, clientKey);
-
-```
-
-これで準備はすべて完了しました。動作確認をしていきましょう。
-
----
-.footnote_right[
-.right[
-ハンズオン<br>2.1. 『demo1：保存』
-]
-]
 
 ## 2.1. 『demo1：保存』
 
