@@ -222,7 +222,7 @@ Monacaでプロジェクトを作る
 ]
 
 ### 参考：SDKとは
-.center[<img src="document-img/SDK.png" alt="Monaca_1" width="600px">]
+.center[<img src="document-img/SDK.png" alt="Monaca_1" width="700px">]
 
 ---
 .footnote_right[
@@ -369,7 +369,7 @@ testClass2.set("message", "Hello,NCMB!")
 ## 結果
 * mobile backend管理画面を確認しましょう
 
-.center[<img src="document-img/dashboard.1.png" alt="Monaca_1" width="600px">]
+.center[<img src="document-img/dashboard.1.png" alt="Monaca_1" width="700px">]
 
 ---
 .footnote_right[
