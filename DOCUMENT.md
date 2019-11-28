@@ -1053,19 +1053,23 @@ getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { /
 * functionの処理（copy & paste）
 
 ```js
-// インスタンスの生成
-    var inquiry = ncmb.DataStore('Inquiry');
-    // データのの条件検索取得（範囲指定）
-    inquiry.order('createDate',true) // 保存日時降順
-           .greaterThanOrEqualTo(feild, inputDataGreaterThan)
-           .lessThan(feild, inputDataLessThan)
-           .fetchAll()
-           .then(function(results){
-               // 検索成功
-           })
-           .catch(function(error){
-               // 検索失敗
-           });
+ // インスタンスの生成
+        var inquiry = ncmb.DataStore('Inquiry');
+        // データのの条件検索取得（範囲指定） 
+        inquiry.order('createDate',true) // 保存日時降順
+               .greaterThanOrEqualTo(feild, inputDataGreaterThan)
+               .lessThan(feild, inputDataLessThan)
+               .fetchAll()
+               .then(function(results){
+                   // 検索成功
+                   console.log('条件検索(範囲指定)成功');
+                   setData('条件検索(範囲指定)', results, '#searchDataList2');
+               })
+               .catch(function(error){
+                   // 検索失敗
+                   ons.notification.alert('データの取得に失敗しました');
+                   console.log('条件検索(範囲指定)失敗：' + error);
+               });
 ```
 
 ---
@@ -1080,19 +1084,24 @@ getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { /
 ```js
 /***** demo3-2：条件検索（範囲指定） *****/
 getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { //引数1 age, 引数2,3 入力値
-    // インスタンスの生成
-    var inquiry = ncmb.DataStore('Inquiry');
-    // データのの条件検索取得（範囲指定）
-    inquiry.order('createDate',true) // 保存日時降順
-           .greaterThanOrEqualTo(feild, inputDataGreaterThan)
-           .lessThan(feild, inputDataLessThan)
-           .fetchAll()
-           .then(function(results){
-               // 検索成功
-           })
-           .catch(function(error){
-               // 検索失敗
-           });
+    // インスタンスの生成
+        var inquiry = ncmb.DataStore('Inquiry');
+        // データのの条件検索取得（範囲指定） 
+        inquiry.order('createDate',true) // 保存日時降順
+               .greaterThanOrEqualTo(feild, inputDataGreaterThan)
+               .lessThan(feild, inputDataLessThan)
+               .fetchAll()
+               .then(function(results){
+                   // 検索成功
+                   console.log('条件検索(範囲指定)成功');
+                   setData('条件検索(範囲指定)', results, '#searchDataList2');
+               })
+               .catch(function(error){
+                   // 検索失敗
+                   ons.notification.alert('データの取得に失敗しました');
+                   console.log('条件検索(範囲指定)失敗：' + error);
+               });
+    }
 }
 ```
 
