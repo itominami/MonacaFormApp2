@@ -1358,7 +1358,6 @@ inquiry.set("emailAddress", "test@test.jp")
 
 .size_small_7[
 ニフクラ mobile backend イメージキャラクター<br>タカノくん
-]
 
 ---
 .footnote_right[
