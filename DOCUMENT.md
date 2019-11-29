@@ -695,6 +695,17 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 ]
 ]
 
+### コード解説
+
+.center[<img src="document-img/img.code.png" alt="confirm_apikey" width="700px">]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.2. 『demo1：保存』
+]
+]
+
 ### コード実装後イメージ
 
 ```js
