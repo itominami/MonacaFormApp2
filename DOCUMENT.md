@@ -749,9 +749,8 @@ Monaca デバッガーまたは<br>プレビュー画面で動作確認をしま
 * 入力後画面下の「送信」ボタンをクリックします
 ]
 
-.right-column[
 .center[<img src="document-img/save_2.png" alt="save_2" width="250px">]
-]
+
 ---
 .footnote_right[
 .right[
