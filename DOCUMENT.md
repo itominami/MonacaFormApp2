@@ -671,7 +671,6 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 ```js
  // 保存先クラスの作成
       var Inquiry = ncmb.DataStore('Inquiry');
-      // インスタンスの生成
       var inquiry = new Inquiry();  
       // データの設定と保存
       inquiry.set('name', data[0]).set('emailAddress', data[1]).set('age', data[2])
@@ -684,7 +683,7 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
             })
             .catch(function(error){
                 //保存失敗
-                ons.notification.alert('問い合わせの受付に失敗したしました');
+                ons.notification.alert('問い合わせの受付に失敗しました');
                     console.log('保存失敗：' + error);
             });
 ```
@@ -701,9 +700,8 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 ```js
 /***** demo1：保存 *****/
 saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, title, contents]
-     // 保存先クラスの作成
+     // 保存先クラスの設定
       var Inquiry = ncmb.DataStore('Inquiry');
-      // インスタンスの生成
       var inquiry = new Inquiry();  
       // データの設定と保存
       inquiry.set('name', data[0]).set('emailAddress', data[1]).set('age', data[2])
@@ -716,7 +714,7 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
             })
             .catch(function(error){
                 //保存失敗
-                ons.notification.alert('問い合わせの受付に失敗したしました');
+                ons.notification.alert('問い合わせの受付に失敗しました');
                     console.log('保存失敗：' + error);
             });
 }
@@ -846,7 +844,6 @@ getAllData: function() {
 * functionの処理（copy & paste）
 
 ```js
- // インスタンスの生成
     var inquiry = ncmb.DataStore('Inquiry');
     // データを全件検索取得
     inquiry.order('createDate',true) // 保存日時降順
@@ -874,7 +871,6 @@ getAllData: function() {
 ```js
 /***** demo2：全件検索 *****/
 getAllData: function() {        
-    // インスタンスの生成
     var inquiry = ncmb.DataStore('Inquiry');
     // データを全件検索取得
     inquiry.order('createDate',true) // 保存日時降順
@@ -1054,7 +1050,6 @@ getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress
 * functionの処理（copy & paste）
 
 ```js
- // インスタンスの生成
         var inquiry = ncmb.DataStore('Inquiry');
         // データの条件検索取得（完全一致）
         inquiry.order('createDate',true) // 保存日時降順
@@ -1084,7 +1079,6 @@ getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress
 ```js
 /***** demo3-1：条件検索 *****/
 getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress, 引数2 入力値
-    // インスタンスの生成
         var inquiry = ncmb.DataStore('Inquiry');
         // データの条件検索取得（完全一致）
         inquiry.order('createDate',true) // 保存日時降順
@@ -1182,7 +1176,6 @@ getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { /
 * functionの処理（copy & paste）
 
 ```js
- // インスタンスの生成
         var inquiry = ncmb.DataStore('Inquiry');
         // データのの条件検索取得（範囲指定） 
         inquiry.order('createDate',true) // 保存日時降順
@@ -1213,7 +1206,6 @@ getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { /
 ```js
 /***** demo3-2：条件検索（範囲指定） *****/
 getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { //引数1 age, 引数2,3 入力値
-    // インスタンスの生成
         var inquiry = ncmb.DataStore('Inquiry');
         // データのの条件検索取得（範囲指定） 
         inquiry.order('createDate',true) // 保存日時降順
