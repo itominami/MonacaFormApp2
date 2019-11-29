@@ -698,7 +698,7 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 
 ### コード解説
 
-.center[<img src="document-img/img.code.png" alt="confirm_apikey" width="700px">]
+.center[<img src="document-img/imgcode.png" alt="confirm_apikey" width="700px">]
 
 ---
 .footnote_right[
