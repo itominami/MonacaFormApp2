@@ -29,6 +29,8 @@ __問い合わせフォーム__ をイメージしたサンプルアプリを通
 
 .center[<img src="document-img/app_image.png" alt="app_image.png" width="750px">]
 
+---
+
 ## データをクラウドに保存する<br>4つのメリット
 
 .size_large_13[
