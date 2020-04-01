@@ -1430,21 +1430,3 @@ layout: false
  * 使用機能 / データストア,位置情報検索
 * [and more...](http://mb.cloud.nifty.com/doc/current/tutorial/tutorial_monaca.html)
 ]
-
----
-layout: true
-class: center, middle, inverse_sub
----
-.center[
-## ご清聴ありがとうございました！
-]
-
----
-layout: false
-
-## アンケートのお願い
-https://goo.gl/forms/QU2oPNHH7Aaw65CK2
-
-.center[
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUXNkv73CEVIW7EX-qWXsiwaTY6lrP93PwgjyhVLsnflkk-Q/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
-]
