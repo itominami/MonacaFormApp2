@@ -24,7 +24,7 @@ layout: false
 はじめに
 ]
 
-## セミナー概要
+## 作成するアプリ
 __問い合わせフォーム__ をイメージしたサンプルアプリを通して、クラウドデータベースへの保存と検索の方法を学んでいきます
 
 .center[<img src="document-img/app_image.png" alt="app_image.png" width="750px">]
