@@ -8,7 +8,7 @@ class: center, middle, inverse
 .right[<img src="document-img/takano.png" alt="takano.png" width="150px">]
 
 .footnote[
-2018/02/14作成（2019/11/28更新）
+2018/02/14作成（2020/4/1更新）
 ]
 
 ---
@@ -24,7 +24,7 @@ layout: false
 はじめに
 ]
 
-## ゴール
+## 作成するアプリ
 __問い合わせフォーム__ をイメージしたサンプルアプリを通して、クラウドデータベースへの保存と検索の方法を学んでいきます
 
 .center[<img src="document-img/app_image.png" alt="app_image.png" width="750px">]
@@ -1425,22 +1425,4 @@ layout: false
 * [地図アプリを作ろう！](https://github.com/NIFTYCloud-mbaas/MonacaMapApp)
  * 使用機能 / データストア,位置情報検索
 * [and more...](http://mb.cloud.nifty.com/doc/current/tutorial/tutorial_monaca.html)
-]
-
----
-layout: true
-class: center, middle, inverse_sub
----
-.center[
-## ご清聴ありがとうございました！
-]
-
----
-layout: false
-
-## アンケートのお願い
-https://goo.gl/forms/QU2oPNHH7Aaw65CK2
-
-.center[
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUXNkv73CEVIW7EX-qWXsiwaTY6lrP93PwgjyhVLsnflkk-Q/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
 ]
